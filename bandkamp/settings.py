@@ -17,7 +17,7 @@ from dotenv import load_dotenv
 import dj_database_url
 
 load_dotenv()
-...
+
 SECRET_KEY = os.getenv('SECRET_KEY')
 
 
@@ -117,7 +117,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 if DATABASE_URL:
     db_deploy = dj_database_url.config(default=DATABASE_URL)
     DATABASES["default"].update(db_deploy)
-#     DEBUG = False
+    DEBUG = False
 
 
 # Password validation
