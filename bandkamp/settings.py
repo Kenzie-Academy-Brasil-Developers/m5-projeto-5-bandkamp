@@ -73,7 +73,7 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "_core.urls"
+ROOT_URLCONF = "bandkamp.urls"
 
 TEMPLATES = [
     {
@@ -91,7 +91,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "_core.wsgi.application"
+WSGI_APPLICATION = "bandkamp.wsgi.application"
 
 
 # Database
