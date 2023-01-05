@@ -117,7 +117,7 @@ DATABASE_URL = os.getenv("DATABASE_URL")
 if DATABASE_URL:
     db_deploy = dj_database_url.config(default=DATABASE_URL)
     DATABASES["default"].update(db_deploy)
-    DEBUG = False
+#     DEBUG = False
 
 
 # Password validation
